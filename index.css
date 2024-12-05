@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+.boxes{
+    background-color:hsl(0, 0%, 95%) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+    
+}
+.box{
+    width: 300px;
+    height: 450px;
+    padding: 30px;
+    color:hsla(0, 0%, 100%, 0.75) ;
+    position: relative;
+
+
+}
+.first{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px ;
+
+}
+.second{
+    background-color: hsl(184, 100%, 22%);
+
+}
+.third{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+
+}
+.box p{
+    font-size: 15px;
+    padding: 20px 20px 60px 5px;
+    word-spacing: 1px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    text-align: left;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.box h1{
+    font-size:40px;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+    .box img{
+        padding: 20px 20px 20px 5px;
+        margin-bottom: 2px;
+        
+    }
+    .box button{
+        padding: 10px 15px;
+        position: absolute;
+        text-align: center;
+        border-radius: 30px;
+        text-transform: capitalize;
+        border: 2px solid hsl(0, 0%, 95%);
+    }
+    .first button{
+        color:hsl(31, 77%, 52%);
+    }
+    .second button {
+        color:hsl(184, 100%, 22%);
+    }
+    .third button{
+        color:hsl(179, 100%, 13%);
+    }
+    button:hover{
+        background-color:transparent;
+        color:hsl(0, 0%, 95%);
+    }
+    @media  (max-width: 970px)  {
+        .boxes{
+            flex-direction:column;
+            padding: 5rem 0;
+        }
+        .box{
+            width: 22rem;
+    
+        }
+        .first{
+            border-radius: 10px 10px 0 0;
+        }
+        .third{
+            border-radius: 0 0 10px 10px;
+        }
+    }
